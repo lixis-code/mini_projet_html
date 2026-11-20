@@ -1,9 +1,14 @@
 body{
     margin: 2rem;
     margin-top: 1rem;
-    background: linear-gradient(180deg, #40f2ffd5, #0077ffcb);
+    background: var(--coleur_fond);
     min-height: 100%;
     background-attachment: fixed;
+}
+
+:root{
+    --coleur_fond: linear-gradient(180deg, #40f2ffd5, #0077ffcb);
+    --couleur-bordure: rgb(77, 77, 77);
 }
 
 .carte{
@@ -65,7 +70,7 @@ a:hover{
 
 table {
     border-collapse: collapse;
-    border: 2px solid rgb(77, 77, 77);
+    border: 2px solid var(--couleur-bordure);
     font-family: sans-serif;
     font-size: 0.8rem;
     letter-spacing: 1px;
@@ -78,7 +83,7 @@ th,td {
 
 thead{
     background-color: rgb(196, 71, 245);
-    border: 2px solid rgb(77, 77, 77);
+    border: 2px solid var(--couleur-bordure);
 }
 
 td:last-of-type {
